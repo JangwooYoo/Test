@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/style-starter.css" rel="stylesheet" />
+    <a href="~/fonts/fontawesome-webfont.eot"></a>
+    <a href="~/fonts/fontawesome-webfont.ttf"></a>
+    <a href="~/fonts/fontawesome-webfont.woff"></a>
+    <a href="~/fonts/fontawesome-webfont.woff2"></a>
+    <a href="~/fonts/FontAwesome.otf"></a>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery-3.3.1.min.js"></script>
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/owl.carousel.js"></script>
+</head>
+<body>
+    <!--w3l-header-->
+
+    <header class="w3l-header-nav">
+        <!--/nav-->
+        <nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
+            <div class="container">
+                <!-- <a class="navbar-brand" href="index.html">Studio <span>지금</span></a> -->
+                <a class="logo" href="Index?Length=4">
+                    <img src="~/images/logo.jpg" alt="Studio 지금" title="Studio 지금" style="height:65px;" />
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa icon-expand fa-bars"></span>
+                    <span class="fa icon-close fa-times"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li>@Html.ActionLink("메인", "Index", "Home", new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("보기", "About", "Home", new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("예약", "Contact", "Home", new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("리뷰", "Services", "Home", new { @class = "nav-link" })</li>
+                    </ul>
+                    <!--/search-right-->
+                    <div class="blank">
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    </div>
+                    <!--//search-right-->
+                    <div class="box-support">
+                        <p>문의 전화 <span class="fa fa-headphones"></span></p>
+                        <h5>010-5854-2642</h5>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--//nav-->
+    </header>
+    <!-- //w3l-header -->
+    <div>
+        @RenderBody()
+    </div>
+    <section class="w3l-footer-29-main">
+        <div class="footer-29 py-5">
+            <div class="container py-lg-4">
+                <div class="row footer-top-29">
+                    <div class="footer-list-29 col-lg-4">
+                        <h6 class="footer-title-29">About Company</h6>
+                        <p>
+                            21평의 작은 공간이지만, 화이트톤과 우드톤의 두가지 컨셉으로 촬영이 가능하며,<br />
+                            더불어 '스튜디오 지금'만의 감성적이고 예쁜 주방공간도 활용해 보세요 :)
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-8 footer-list-29 footer-1 mt-lg-0 mt-5">
+                        <h6 class="footer-title-29">Contact Us</h6>
+                        <ul>
+                            <li>
+                                <p>
+                                    <span class="fa fa-map-marker"></span> 충청남도 천안시 동남구 청수14로 66 선우법조타운 1동 904호
+                                </p>
+                            </li>
+                            <li><a href="tel:+82-10-5854-2642"><span class="fa fa-phone"></span> 010-5854-2642</a></li>
+                            <li>
+                                <a href="mailto:jangwoojjan@naver.com" class="mail">
+                                    <span class="fa fa-envelope-open-o"></span>
+                                    jangwoojjan@naver.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-4 footer-list-29 footer-2 mt-lg-0 mt-5">
+
+                        <ul>
+                            <h6 class="footer-title-29">Site Map</h6>
+                            <li>@Html.ActionLink("보기", "About", "Home", new { @class = "nav-link" })</li>
+                            <li>@Html.ActionLink("예약", "Contact", "Home", new { @class = "nav-link" })</li>
+                            <li>@Html.ActionLink("리뷰", "Services", "Home", new { @class = "nav-link" })</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-list-29 footer-3 mt-lg-0 mt-5">
+                        <h6 class="footer-title-29">Studio Jigeum</h6>
+                        <div class="main-social-footer-29 mt-4">
+                            <a href="https://www.instagram.com/jigeum_loanna/" class="instagram"><span class="fa fa-instagram"></span></a>
+                            <a href="https://blog.naver.com/leemikyoaa" class="linkedin"><span class="fa fa-linkedin"></span></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="w3l-footer-29-main w3l-copyright">
+        <div class="container">
+            <div class="bottom-copies">
+                <p class="copy-footer-29 text-center">
+                    © 2022 Studio Jigeum. All rights reserved. Design by <a href="https://www.instagram.com/jigeum_loanna/" target="_blank">
+                        JW
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <!-- move top -->
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+            &#10548;
+        </button>
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <!-- /move top -->
+    </section>
+</body>
+</html>
